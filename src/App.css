@@ -1,0 +1,330 @@
+* {
+  box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el ancho y alto */
+}
+
+#root {
+  margin: 0; /* Eliminar el margen para ocupar todo el espacio */
+  padding: 0; /* Eliminar el padding para ocupar todo el espacio */
+  width: 100%; /* Asegurarte de que el contenedor ocupe el 100% del ancho */
+  height: 100vh; /* Asegúrate de que ocupe toda la altura de la ventana */
+  display: flex;
+  background-image: url('./assets/background.png');
+  
+}
+
+.logo {
+ 
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+  font-family: Serifas Elegantes;
+  font-weight: 100;
+}
+
+
+
+
+.body2{
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  background-color: #15161d;
+  background-image: url('./assets/background.png');
+}
+
+
+body, html {
+  margin: 0; /* Eliminar márgenes predeterminados */
+  padding: 0; /* Eliminar padding predeterminado */
+  height: 100%; /* Asegurarte de que ocupe toda la altura */
+  background-image: url('./assets/background.png');
+  background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+  background-position: center; /* Centra la imagen de fondo */
+
+}
+
+.navbar {
+  background-color: #303141;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10%;
+  width: 100%;
+    position: fixed; /* Fijo para que siempre esté visible */
+    top: 0; /* Alinear al top */
+    z-index: 1000; 
+
+
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav1-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav1-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 12px;
+}
+
+
+.nav-links a:hover {
+  color: #bebebe; /* Color al pasar el mouse */
+}
+
+.nav1-links a {
+  color: #fcfcfc;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 12px;
+}
+
+
+.nav1-links a:hover {
+  color: #dadada; /* Color al pasar el mouse */
+}
+
+.cart {
+  margin-left: auto; /* Asegura que el carrito esté a la derecha */
+  font-size: 16px;
+}
+
+
+.content-list {
+  margin-top: 10%;
+  display: flex; /* Usar flexbox para alinear los hijos */
+  align-items: center; /* Alinear verticalmente al centro */
+  justify-content: center; /* Alinear horizontalmente al centro */
+  height: 100%; /* Asegúrate de que ocupe todo el alto disponible */
+  background-image: url('./assets/background.png');
+}
+
+.product-list {
+  background-color: #303141ce;
+  border-radius: 10px;
+  display: grid; /* Usar grid para organizar los productos */
+  grid-template-columns: repeat(5, 1fr); /* 5 columnas de igual ancho */
+  gap: 20px; /* Espacio entre elementos */
+  padding: 60px;
+  width: 100%; /* Ocupar el 100% del ancho del contenedor */
+  max-width: 1400px; /* Ancho máximo para el contenedor */
+  margin-top: 20%; /* Margen superior */
+  
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: red;
+}
+
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #313131;
+  color: white;
+  width: 100%;
+  position: fixed;
+  height: 13%;
+  bottom: 0; /* Alinear al top */ /* Asegura que el footer se ubique al final */
+}
+
+.sign-in-button {
+  background-color: #39E29D; /* Color verde */
+  color: #303141;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  display: flex; /* Usar flexbox para alinear items */
+  align-items: center; /* Alinear verticalmente */
+  transition: background-color 0.3s;
+}
+
+.sign-in-button:hover {
+  background-color: #32be86; /* Color al pasar el mouse */
+}
+
+.sign-in-button .icon {
+  margin-left: 5px; /* Espacio entre el texto y el ícono */
+  display: flex; /* Asegura que el ícono esté alineado */
+  align-items: center; /* Alinear verticalmente */
+}
+
+
+
+.product-card {
+  border: transparent;
+  background-color: #353A4F; /* Color de fondo oscuro */
+  color: white; /* Color del texto */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 1em; /* Espaciado interno */
+  margin: 1em; /* Espaciado externo */
+  width: 12rem; /* Ancho fijo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+  position: relative; /* Necesario para posicionamiento absoluto de elementos internos */
+  text-align: left;
+}
+
+.badge {
+  background-color: transparent;
+  font-size: 10px; /* Color para "ON SALE" */
+  color: #fff;
+  padding: 0.5em;
+  border-radius: 5px; /* Bordes redondeados */
+  position: absolute; /* Posicionamiento absoluto */
+  top: 10px; /* Ajusta la posición superior */
+  left: 10px; /* Ajusta la posición izquierda */
+}
+
+.product-image {
+  width: 100%; /* Imagen ocupa todo el ancho */
+  border-radius: 5px; /* Bordes redondeados en la imagen */
+}
+
+.product-title {
+  margin: 0.5em 0; 
+  font-weight: lighter;/* Espaciado superior e inferior */
+}
+
+.product-price {
+  margin: 0.5em 0;
+  font-weight: 600;  /* Espaciado superior e inferior */
+}
+
+.original-price {
+  color: #ccc;
+  font-weight: 600; /* Color gris para precio original */
+}
+
+.product-description {
+  margin-bottom: 1em;
+  font-size: 12px;
+  font-weight: lighter;/* Margen en la parte inferior */
+}
+
+.quantity-container {
+  display: flex; /* Flexbox para alinear el input */
+  justify-content: flex-end; /* Alinear input a la derecha */
+  margin-bottom: 1em; /* Margen inferior */
+}
+
+.quantity-input {
+  width: 40px;
+  height: 30px; /* Ancho fijo para el input */
+  margin-right: 1em; 
+  background-color: #4f516b4f;
+  border: transparent;
+  padding: 8px;
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+.stock-badge {
+  padding: 0.5em; /* Espaciado interno */
+  border-radius: 5px;
+  justify-content: center;
+  text-align: center;
+  align-content:center ;/* Bordes redondeados */
+  width: 60px;
+  height: 30px;
+  font-size: 11px;
+  position: absolute; /* Posicionamiento absoluto */
+  top: 39px; /* Ajusta la posición para que esté debajo de "ON SALE" */
+  left: 15px; /* Alineado a la izquierda */ /* Ajusta la posición izquierda, considerando el ancho de la etiqueta "ON SALE" */
+}
+
+.in-stock {
+  background-color: transparent;
+  border: 1px solid #32be86;
+  color: #32be86; /* Color para "In stock" */
+}
+
+.out-of-stock {
+  background-color: transparent;
+  border: 1px solid #a80000;
+  color: #a80000; /* Color para "Out of stock" */
+}
+
+.button-container {
+  display: flex; /* Flexbox para alinear botones */
+  justify-content: space-between; /* Espaciado entre botones */
+}
+
+.add-button, .details-button {
+  padding: 0.5em 1em; /* Espaciado interno */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor de puntero */
+}
+
+.add-button {
+  background-color: #007bff; /* Color del botón de agregar */
+  color: white; /* Color del texto */
+  width: 70px;
+  font-size: 10px;
+}
+
+.details-button {
+  background-color: #303141a0; /* Color del botón de detalles */
+  color: rgba(255, 255, 255, 0.518); 
+  width: 70px;
+  height: 50px;
+  font-size: 10px;
+}
+
+.add-button:hover {
+  background-color: #0056b3; /* Color al pasar el mouse por el botón de agregar */
+}
+
+.details-button:hover {
+  background-color: #5a6268; /* Color al pasar el mouse por el botón de detalles */
+}
+
+
+.divider {
+  background-color: #ccc; /* Color de la línea */
+  flex-shrink: 0; /* Evita que se reduzca en contenedores flexibles */
+}
+
+.horizontal {
+  height: 1px; /* Altura de la línea horizontal */
+  width: 100%; /* Ancho completo */
+  margin: 10px 0; /* Margen superior e inferior */
+}
+
+.vertical {
+  width: 1px; /* Ancho de la línea vertical */
+  height: 100%; /* Altura completa */
+  margin: 0 10px; /* Margen a los lados */
+}
