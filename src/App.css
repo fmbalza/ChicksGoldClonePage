@@ -30,6 +30,7 @@
   align-content: center;
   background-color: #15161d;
   background-image: url('./assets/background.png');
+  height: 100%; /* Asegurarte de que ocupe toda la altura */
 }
 
 
@@ -111,55 +112,26 @@ body, html {
 }
 
 
-.content-list {
-  margin-top: 10%;
-  display: flex; /* Usar flexbox para alinear los hijos */
-  align-items: center; /* Alinear verticalmente al centro */
-  justify-content: center; /* Alinear horizontalmente al centro */
-  height: 100%; /* Asegúrate de que ocupe todo el alto disponible */
-  background-image: url('./assets/background.png');
-}
-
-.product-list {
-  background-color: #303141ce;
-  border-radius: 10px;
-  display: grid; /* Usar grid para organizar los productos */
-  grid-template-columns: repeat(5, 1fr); /* 5 columnas de igual ancho */
-  gap: 20px; /* Espacio entre elementos */
-  padding: 60px;
-  width: 100%; /* Ocupar el 100% del ancho del contenedor */
-  max-width: 1400px; /* Ancho máximo para el contenedor */
-  margin-top: 20%; /* Margen superior */
-  
-}
-
-.product-card {
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 10px;
-    text-align: center;
-    width: 200px;
-}
-
-.old-price {
-    text-decoration: line-through;
-    color: red;
-}
 
 
 
-footer {
+
+/* Footer */
+
+.footer {
+  flex: 1;
   text-align: center;
   padding: 20px;
   background-color: #313131;
   color: white;
   width: 100%;
-  position: fixed;
+  position: absolute;
   height: 13%;
-  bottom: 0; /* Alinear al top */ /* Asegura que el footer se ubique al final */
+  bottom: -100%; /* Alinear al top */
+  z-index: 1000; 
 }
 
+/* NavBar */
 .sign-in-button {
   background-color: #39E29D; /* Color verde */
   color: #303141;
@@ -182,6 +154,30 @@ footer {
   align-items: center; /* Alinear verticalmente */
 }
 
+/* Product Card */
+
+.content-list {
+  margin-top: 10%;
+  display: flex; /* Usar flexbox para alinear los hijos */
+  align-items: center; /* Alinear verticalmente al centro */
+  justify-content: center; /* Alinear horizontalmente al centro */
+  height: 100%; /* Asegúrate de que ocupe todo el alto disponible */
+  background-image: url('./assets/background.png');
+}
+
+.product-list {
+  background-color: rgba(48, 49, 65, 0.8); /* Color de fondo con opacidad */
+  border-radius: 10px;
+  display: grid; /* Usar grid para organizar los productos */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta automáticamente el número de columnas */
+  gap: 20px; /* Espacio entre elementos */
+  padding: 20px; /* Espaciado alrededor del contenido */
+  width: 100%; /* Ocupar el 100% del ancho del contenedor */
+  max-width: 1400px; /* Ancho máximo para el contenedor */
+  margin: 20px auto; /* Centrado automático con margen superior e inferior */
+  box-sizing: border-box; /* Asegura que padding y border se incluyan en el ancho */
+}
+
 
 
 .product-card {
@@ -191,15 +187,16 @@ footer {
   border-radius: 10px; /* Bordes redondeados */
   padding: 1em; /* Espaciado interno */
   margin: 1em; /* Espaciado externo */
-  width: 12rem; /* Ancho fijo */
+  width: 11rem; /* Ancho fijo */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
   position: relative; /* Necesario para posicionamiento absoluto de elementos internos */
   text-align: left;
+  transition: transform 0.2s;
 }
 
 .badge {
   background-color: transparent;
-  font-size: 10px; /* Color para "ON SALE" */
+  font-size: 8px; /* Color para "ON SALE" */
   color: #fff;
   padding: 0.5em;
   border-radius: 5px; /* Bordes redondeados */
@@ -230,7 +227,8 @@ footer {
 
 .product-description {
   margin-bottom: 1em;
-  font-size: 12px;
+  font-size: 10px;
+  color: #bebebe;
   font-weight: lighter;/* Margen en la parte inferior */
 }
 
@@ -289,7 +287,7 @@ footer {
 }
 
 .add-button {
-  background-color: #007bff; /* Color del botón de agregar */
+  background-color: #5762D5; /* Color del botón de agregar */
   color: white; /* Color del texto */
   width: 70px;
   font-size: 10px;
@@ -299,18 +297,19 @@ footer {
   background-color: #303141a0; /* Color del botón de detalles */
   color: rgba(255, 255, 255, 0.518); 
   width: 70px;
-  height: 50px;
+  height: 30px;
   font-size: 10px;
 }
 
 .add-button:hover {
-  background-color: #0056b3; /* Color al pasar el mouse por el botón de agregar */
+  background-color: #5762D5; /* Color al pasar el mouse por el botón de agregar */
 }
 
 .details-button:hover {
   background-color: #5a6268; /* Color al pasar el mouse por el botón de detalles */
 }
 
+/* Divider.jsx */
 
 .divider {
   background-color: #ccc; /* Color de la línea */
@@ -328,3 +327,7 @@ footer {
   height: 100%; /* Altura completa */
   margin: 0 10px; /* Margen a los lados */
 }
+
+
+/* Pagination.css */
+

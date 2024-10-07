@@ -1,6 +1,7 @@
 import React from 'react';
 import ProductCard from './ProductCard';
-
+import Footer from './Footer';
+import Pagination from './Pagination';
 import '../App.css'
 const products = [
     {        
@@ -13,7 +14,7 @@ const products = [
         inStock: true
     },
     {        
-        id: 1,
+        id: 2,
         name: 'Blue Partyhat',
         price: 450.00,
         originalPrice: 522.50,
@@ -22,7 +23,7 @@ const products = [
         inStock: true
     },
     {        
-        id: 1,
+        id: 3,
         name: 'Blue Partyhat',
         price: 450.00,
         originalPrice: 522.50,
@@ -31,7 +32,7 @@ const products = [
         inStock: true
     },
     {        
-        id: 1,
+        id: 4,
         name: 'Blue Partyhat',
         price: 450.00,
         originalPrice: 522.50,
@@ -40,7 +41,7 @@ const products = [
         inStock: true
     },
     {        
-        id: 1,
+        id: 5,
         name: 'Blue Partyhat',
         price: 450.00,
         originalPrice: 522.50,
@@ -49,7 +50,7 @@ const products = [
         inStock: true
     },
     {        
-        id: 1,
+        id: 6,
         name: 'Blue Partyhat',
         price: 450.00,
         originalPrice: 522.50,
@@ -58,7 +59,7 @@ const products = [
         inStock: true
     },
     {        
-        id: 1,
+        id: 7,
         name: 'Blue Partyhat',
         price: 450.00,
         originalPrice: 522.50,
@@ -67,7 +68,7 @@ const products = [
         inStock: true
     },
     {        
-        id: 1,
+        id: 8,
         name: 'Blue Partyhat',
         price: 450.00,
         originalPrice: 522.50,
@@ -76,7 +77,7 @@ const products = [
         inStock: true
     },
     {        
-        id: 1,
+        id: 9,
         name: 'Blue Partyhat',
         price: 450.00,
         originalPrice: 522.50,
@@ -85,7 +86,7 @@ const products = [
         inStock: true
     },
     {        
-        id: 1,
+        id: 10,
         name: 'Blue Partyhat',
         price: 450.00,
         originalPrice: 522.50,
@@ -94,7 +95,7 @@ const products = [
         inStock: true
     },
     {        
-        id: 1,
+        id: 11,
         name: 'Blue Partyhat',
         price: 450.00,
         originalPrice: 522.50,
@@ -109,15 +110,22 @@ const products = [
 ];
 
 const ProductList = () => {
+
+
     return (
+     
+            
         <div className='content-list'>
+            
             <div className="product-list">
                 {products.map(product => (
                     <ProductCard key={product.id} product={product} />
                 ))}
+                
             </div>
+                <Footer/>             
         </div>
-     
+        
     );
 };
 
