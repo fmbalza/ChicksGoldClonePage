@@ -128,6 +128,10 @@ body, html {
   background-color: #32be86; /* Color al pasar el mouse */
 }
 
+.sign-in-button:focus {
+  outline: none ; /* Color al pasar el mouse */
+}
+
 .sign-in-button .icon {
   margin-left: 5px; /* Espacio entre el texto y el ícono */
   display: flex; /* Asegura que el ícono esté alineado */
@@ -151,17 +155,6 @@ body, html {
   bottom: -100%; /* Alinear al top */
  
 }
-@media (min-width: 1024px) {
-  .footer {
-    bottom: -50%; /* Valor para pantallas grandes */
-  }
-}
-
-@media (max-width: 768px) {
-  .footer {
-    bottom: -180rem;  /* Ajusta este valor según tus necesidades */
-  }
-}
 
 /* Product Card */
 
@@ -170,10 +163,12 @@ body, html {
   display: flex; /* Usar flexbox para alinear los hijos */
   align-items: center; /* Alinear verticalmente al centro */
   justify-content: center; /* Alinear horizontalmente al centro */
-  /* Asegúrate de que ocupe todo el alto disponible */
   background-image: url('./assets/background.png');
 
 }
+
+
+
 
 .product-list {
   background-color: rgba(48, 49, 65, 0.8); /* Color de fondo con opacidad */
@@ -258,6 +253,10 @@ body, html {
   border-radius: 5px; /* Bordes redondeados */
 }
 
+.quantity-input:focus{
+  outline: none;
+}
+
 .stock-badge {
   padding: 0.5em; /* Espaciado interno */
   border-radius: 5px;
@@ -303,6 +302,9 @@ body, html {
   font-size: 10px;
 }
 
+.add-button:focus{
+  outline: none;
+}
 .details-button {
   background-color: #303141a0; /* Color del botón de detalles */
   color: rgba(255, 255, 255, 0.518); 
@@ -310,7 +312,9 @@ body, html {
   height: 30px;
   font-size: 10px;
 }
-
+.details-button:focus{
+  outline: none;
+}
 .add-button:hover {
   background-color: #5762D5; /* Color al pasar el mouse por el botón de agregar */
 }
@@ -339,5 +343,101 @@ body, html {
 }
 
 
-/* Pagination.css */
+/* Select.jsx */
 
+.select-container {
+  display: flex;
+  align-items: center;
+  margin-right: 10px; /* Espacio entre selects */
+  background-color: #303141a0;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.select-icon {
+  margin-right: 5px; /* Espacio entre icono y select */
+}
+
+.select {
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  appearance: none; /* Eliminar el estilo predeterminado del select */
+  background: transparent;
+}
+
+.select:focus{
+    border: 1px solid transparent;
+    outline: none;
+
+}
+
+.chevron-icon {
+  margin-left: 5px; /* Espacio entre select y chevron */
+}
+
+
+
+/* Searchbar.jsx */
+
+.searchbar {
+  position: absolute;
+  top:8%;
+  width:74%;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 13.23%; /* Apilar elementos verticalmente */
+  
+}
+
+.searchbar-container {
+  display: flex;
+  align-items: center; /* Alinear verticalmente */
+  margin-top: 10px; /* Espacio entre título y contenedor */
+}
+
+.search-input {
+  padding: 18px;
+  margin-right: 10px; /* Espacio entre la barra de búsqueda y los selects */
+  border: 1px solid transparent;
+  border-radius: 5px;
+  flex: 1; /* Ocupar el espacio restante */
+  background-color: #303141a0;
+
+}
+
+.search-input:focus {
+
+  border: 1px solid transparent;
+  outline: none;
+}
+
+
+
+
+
+
+
+
+/* Funciones @media */
+
+@media (min-width: 1024px) {
+  .footer {
+    bottom: -50%; /* Valor para pantallas grandes */
+  }
+}
+
+
+
+@media (max-width: 820px) {
+
+
+  .content-list{
+    margin-top: 80%;
+  }
+  .footer {
+    bottom: -200rem;  /* Ajusta este valor según tus necesidades */
+  }
+}

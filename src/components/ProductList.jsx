@@ -2,6 +2,7 @@ import React from 'react';
 import ProductCard from './ProductCard';
 import Footer from './Footer';
 import Pagination from './Pagination';
+import Searchbar from './SearchBar';
 import '../App.css'
 const products = [
     {        
@@ -117,6 +118,8 @@ const ProductList = () => {
             
         <div className='content-list'>
             
+            
+
             <div className="product-list">
                 {products.map(product => (
                     <ProductCard key={product.id} product={product} />
