@@ -6,7 +6,6 @@
   margin: 0; /* Eliminar el margen para ocupar todo el espacio */
   padding: 0; /* Eliminar el padding para ocupar todo el espacio */
   width: 100%; /* Asegurarte de que el contenedor ocupe el 100% del ancho */
-  height: 100vh; /* Asegúrate de que ocupe toda la altura de la ventana */
   display: flex;
   background-image: url('./assets/background.png');
   
@@ -30,19 +29,21 @@
   align-content: center;
   background-color: #15161d;
   background-image: url('./assets/background.png');
-  height: 100%; /* Asegurarte de que ocupe toda la altura */
+
 }
 
 
 body, html {
   margin: 0; /* Eliminar márgenes predeterminados */
   padding: 0; /* Eliminar padding predeterminado */
-  height: 100%; /* Asegurarte de que ocupe toda la altura */
+ /* Asegurarte de que ocupe toda la altura */
   background-image: url('./assets/background.png');
   background-size: cover; /* Asegura que la imagen cubra todo el fondo */
   background-position: center; /* Centra la imagen de fondo */
 
 }
+
+/* NavBar */
 
 .navbar {
   background-color: #303141;
@@ -111,27 +112,6 @@ body, html {
   font-size: 16px;
 }
 
-
-
-
-
-
-/* Footer */
-
-.footer {
-  flex: 1;
-  text-align: center;
-  padding: 20px;
-  background-color: #313131;
-  color: white;
-  width: 100%;
-  position: absolute;
-  height: 13%;
-  bottom: -100%; /* Alinear al top */
-  z-index: 1000; 
-}
-
-/* NavBar */
 .sign-in-button {
   background-color: #39E29D; /* Color verde */
   color: #303141;
@@ -154,6 +134,35 @@ body, html {
   align-items: center; /* Alinear verticalmente */
 }
 
+
+
+
+/* Footer */
+
+.footer {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  background-color: #313131;
+  color: white;
+  width: 100%;
+  position: absolute;
+  height: 23%;
+  bottom: -100%; /* Alinear al top */
+ 
+}
+@media (min-width: 1024px) {
+  .footer {
+    bottom: -50%; /* Valor para pantallas grandes */
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    bottom: -180rem;  /* Ajusta este valor según tus necesidades */
+  }
+}
+
 /* Product Card */
 
 .content-list {
@@ -161,8 +170,9 @@ body, html {
   display: flex; /* Usar flexbox para alinear los hijos */
   align-items: center; /* Alinear verticalmente al centro */
   justify-content: center; /* Alinear horizontalmente al centro */
-  height: 100%; /* Asegúrate de que ocupe todo el alto disponible */
+  /* Asegúrate de que ocupe todo el alto disponible */
   background-image: url('./assets/background.png');
+
 }
 
 .product-list {
