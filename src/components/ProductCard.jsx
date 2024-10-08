@@ -22,7 +22,7 @@ const ProductCard = ({ product }) => {
                 <span className={`stock-badge ${product.inStock ? 'in-stock' : 'out-of-stock'}`}>
                         <span>{product.inStock ? 'In stock' : 'Out of stock'}</span>
                 </span>
-            <img src={product.image} className="product-image" />
+            <img src={product.image} style={{width:'50px', marginTop:'20px'}} />
             <h5 className="product-title">{product.name}</h5>
             <p className="product-price">
                 <span className="original-price"><s>${product.price  }</s></span> ${product.originalPrice}

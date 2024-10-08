@@ -1,6 +1,7 @@
 import React from 'react';
 import Select from './Select';
-import '../App.css'; // Asegúrate de crear un archivo CSS para estilos
+import '../App.css';
+import * as Icon from 'react-bootstrap-icons' // Asegúrate de crear un archivo CSS para estilos
 
 const Searchbar = () => {
     return (
@@ -9,8 +10,8 @@ const Searchbar = () => {
             <div className="searchbar-container">
                 <Select name="Select a game" icon="⚔️" />
                 <input type="text" placeholder="Search" className="search-input" />
-                <Select name="Price" icon="💰" />
-                <Select name="Item Type" icon="🖋️" />
+                <Select name="Price" icon={<Icon.Tags/>} />
+                <Select name="Item Type" icon={<Icon.PenFill/>} />
             </div>
         </div>
     );
