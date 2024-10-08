@@ -2,10 +2,10 @@
 
 .content-list {
     margin-top: 15%;
-    display: flex; /* Usar flexbox para alinear los hijos */
+    display: flex; 
     flex-direction: column;
-    align-items: center; /* Alinear verticalmente al centro */
-    justify-content: center; /* Alinear horizontalmente al centro */
+    align-items: center; 
+    justify-content: center; 
     background-image: url('./assets/background.png');
     
   }
@@ -18,16 +18,16 @@
   }
   
   .product-list {
-    background-color: rgba(48, 49, 65, 0.8); /* Color de fondo con opacidad */
+    background-color: rgba(48, 49, 65, 0.8);
     border-radius: 10px;
-    display: grid; /* Usar grid para organizar los productos */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta automáticamente el número de columnas */
-    gap: 20px; /* Espacio entre elementos */
-    padding: 50px; /* Espaciado alrededor del contenido */
-    width: 100%; /* Ocupar el 100% del ancho del contenedor */
-    max-width: 1400px; /* Ancho máximo para el contenedor */
-    margin: 20px auto; /* Centrado automático con margen superior e inferior */
-    box-sizing: border-box; /* Asegura que padding y border se incluyan en el ancho */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px; 
+    padding: 50px; 
+    width: 100%; 
+    max-width: 1400px; 
+    margin: 20px auto; 
+    box-sizing: border-box; 
     height: 60rem;
   }
   
@@ -35,71 +35,71 @@
   
   .product-card {
     border: transparent;
-    background-color: #353A4F; /* Color de fondo oscuro */
-    color: white; /* Color del texto */
-    border-radius: 10px; /* Bordes redondeados */
-    padding: 1em; /* Espaciado interno */
-    margin: 1em; /* Espaciado externo */
+    background-color: #353A4F; 
+    color: white; 
+    border-radius: 10px;
+    padding: 1em;
+    margin: 1em; 
     width: 11rem;
-    height: 18rem; /* Ancho fijo */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
-    position: relative; /* Necesario para posicionamiento absoluto de elementos internos */
+    height: 18rem; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    position: relative; 
     text-align: left;
     transition: transform 0.2s;
   }
   
   .badge {
     background-color: transparent;
-    font-size: 8px; /* Color para "ON SALE" */
+    font-size: 8px; 
     color: #fff;
     padding: 0.5em;
-    border-radius: 5px; /* Bordes redondeados */
-    position: absolute; /* Posicionamiento absoluto */
-    top: 10px; /* Ajusta la posición superior */
-    left: 10px; /* Ajusta la posición izquierda */
+    border-radius: 5px; 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
   }
   
   .product-image {
-    width: 100%; /* Imagen ocupa todo el ancho */
-    border-radius: 5px; /* Bordes redondeados en la imagen */
+    width: 100%; 
+    border-radius: 5px; 
   }
   
   .product-title {
     margin: 0.5em 0; 
-    font-weight: lighter;/* Espaciado superior e inferior */
+    font-weight: lighter;
   }
   
   .product-price {
     margin: 0.5em 0;
-    font-weight: 600;  /* Espaciado superior e inferior */
+    font-weight: 600;  
   }
   
   .original-price {
     color: #ccc;
-    font-weight: 600; /* Color gris para precio original */
+    font-weight: 600; 
   }
   
   .product-description {
     margin-bottom: 1em;
     font-size: 10px;
     color: #bebebe;
-    font-weight: lighter;/* Margen en la parte inferior */
+    font-weight: lighter;
   }
   
   .quantity-container {
-    display: flex; /* Flexbox para alinear el input */
-    justify-content: flex-end; /* Alinear input a la derecha */
-    margin-bottom: 1em; /* Margen inferior */
+    display: flex; 
+    justify-content: flex-end; 
+    margin-bottom: 1em; 
   }
   
   .quantity-input {
     width: 40px;
-    height: 30px; /* Ancho fijo para el input */
+    height: 30px; 
     margin-right: 1em; 
     background-color: #4f516b4f;
     border: transparent;
     padding: 8px;
-    border-radius: 5px; /* Bordes redondeados */
+    border-radius: 5px; 
   }
   
   .quantity-input:focus{
@@ -107,46 +107,46 @@
   }
   
   .stock-badge {
-    padding: 0.5em; /* Espaciado interno */
+    padding: 0.5em; 
     border-radius: 5px;
     justify-content: center;
     text-align: center;
-    align-content:center ;/* Bordes redondeados */
+    align-content:center ;
     width: 60px;
     height: 30px;
     font-size: 11px;
-    position: absolute; /* Posicionamiento absoluto */
-    top: 39px; /* Ajusta la posición para que esté debajo de "ON SALE" */
-    left: 15px; /* Alineado a la izquierda */ /* Ajusta la posición izquierda, considerando el ancho de la etiqueta "ON SALE" */
+    position: absolute; 
+    top: 39px; 
+    left: 15px; 
   }
   
   .in-stock {
     background-color: transparent;
     border: 1px solid #32be86;
-    color: #32be86; /* Color para "In stock" */
+    color: #32be86; 
   }
   
   .out-of-stock {
     background-color: transparent;
     border: 1px solid #a80000;
-    color: #a80000; /* Color para "Out of stock" */
+    color: #a80000; 
   }
   
   .button-container {
-    display: flex; /* Flexbox para alinear botones */
-    justify-content: space-between; /* Espaciado entre botones */
+    display: flex; 
+    justify-content: space-between; 
   }
   
   .add-button, .details-button {
-    padding: 0.5em 1em; /* Espaciado interno */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cursor de puntero */
+    padding: 0.5em 1em; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
   }
   
   .add-button {
-    background-color: #5762D5; /* Color del botón de agregar */
-    color: white; /* Color del texto */
+    background-color: #5762D5; 
+    color: white; 
     width: 70px;
     font-size: 10px;
   }
@@ -155,7 +155,7 @@
     outline: none;
   }
   .details-button {
-    background-color: #303141a0; /* Color del botón de detalles */
+    background-color: #303141a0; 
     color: rgba(255, 255, 255, 0.518); 
     width: 70px;
     height: 30px;
@@ -165,30 +165,30 @@
     outline: none;
   }
   .add-button:hover {
-    background-color: #5762D5; /* Color al pasar el mouse por el botón de agregar */
+    background-color: #5762D5; 
   }
   
   .details-button:hover {
-    background-color: #5a6268; /* Color al pasar el mouse por el botón de detalles */
+    background-color: #5a6268; 
   }
   
   /* Divider.jsx */
   
   .divider {
-    background-color: #ccc; /* Color de la línea */
-    flex-shrink: 0; /* Evita que se reduzca en contenedores flexibles */
+    background-color: #ccc; 
+    flex-shrink: 0;
   }
   
   .horizontal {
-    height: 1px; /* Altura de la línea horizontal */
-    width: 100%; /* Ancho completo */
-    margin: 10px 0; /* Margen superior e inferior */
+    height: 1px; 
+    width: 100%; 
+    margin: 10px 0; 
   }
   
   .vertical {
-    width: 1px; /* Ancho de la línea vertical */
-    height: 100%; /* Altura completa */
-    margin: 0 10px; /* Margen a los lados */
+    width: 1px; 
+    height: 100%;
+    margin: 0 10px; 
   }
   
   
@@ -197,21 +197,21 @@
   .select-container {
     display: flex;
     align-items: center;
-    margin-right: 10px; /* Espacio entre selects */
+    margin-right: 10px; 
     background-color: #303141a0;
     padding: 5px;
     border-radius: 5px;
   }
   
   .select-icon {
-    margin-right: 5px; /* Espacio entre icono y select */
+    margin-right: 5px; 
   }
   
   .select {
     padding: 10px;
     border: 1px solid transparent;
     border-radius: 5px;
-    appearance: none; /* Eliminar el estilo predeterminado del select */
+    appearance: none; 
     background: transparent;
   }
   
@@ -222,7 +222,7 @@
   }
   
   .chevron-icon {
-    margin-left: 5px; /* Espacio entre select y chevron */
+    margin-left: 5px;
   }
   
   
@@ -232,28 +232,28 @@
   .searchbar {
     position: absolute;
     top: 8%;
-    width: 74%; /* Ancho inicial */
+    width: 74%; 
     color: white;
     padding: 20px;
     display: flex;
     flex-direction: column;
     
-    margin-left: 13.23%; /* Ajustar margen según pantalla */
+    margin-left: 13.23%; 
   }
   
   .searchbar-container {
     display: flex;
-    align-items: center; /* Alinear verticalmente */
+    align-items: center; 
     margin-top: 10px;
-     /* Espacio entre título y contenedor */
+    
   }
   
   .search-input {
     padding: 18px;
-    margin-right: 10px; /* Espacio entre la barra de búsqueda y los selects */
+    margin-right: 10px; 
     border: 1px solid transparent;
     border-radius: 5px;
-    flex: 1; /* Ocupar el espacio restante */
+    flex: 1; 
     background-color: #303141a0;
     flex-wrap: wrap;
   }
@@ -266,10 +266,10 @@
 
 
   .pagination-container{
-    margin-top: -130px; /* Espacio entre los productos y la paginación */
-    display: flex; /* Usar flex para centrar */
-    justify-content: center; /* Centra el contenido horizontalmente */
-    width: 100%; /* Asegúrate de que ocupe el 100% del ancho */
+    margin-top: -130px; 
+    display: flex; 
+    justify-content: center; 
+    width: 100%; 
   }
 
 

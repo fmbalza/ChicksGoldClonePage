@@ -21,8 +21,8 @@
     align-items: center;
     height: 10%;
     width: 100%;
-      position: fixed; /* Fijo para que siempre esté visible */
-      top: 0; /* Alinear al top */
+      position: fixed; 
+      top: 0; 
       z-index: 1000; 
   
   
@@ -59,7 +59,7 @@
   
   
   .nav-links a:hover {
-    color: #bebebe; /* Color al pasar el mouse */
+    color: #bebebe; 
   }
   
   .nav1-links a {
@@ -71,38 +71,38 @@
   
   
   .nav1-links a:hover {
-    color: #dadada; /* Color al pasar el mouse */
+    color: #dadada; 
   }
   
   .cart {
-    margin-left: auto; /* Asegura que el carrito esté a la derecha */
+    margin-left: auto; 
     font-size: 16px;
   }
   
   .sign-in-button {
-    background-color: #39E29D; /* Color verde */
+    background-color: #39E29D; 
     color: #303141;
     border: none;
     border-radius: 5px;
     padding: 10px 15px;
     cursor: pointer;
-    display: flex; /* Usar flexbox para alinear items */
-    align-items: center; /* Alinear verticalmente */
+    display: flex; 
+    align-items: center; 
     transition: background-color 0.3s;
   }
   
   .sign-in-button:hover {
-    background-color: #32be86; /* Color al pasar el mouse */
+    background-color: #32be86; 
   }
   
   .sign-in-button:focus {
-    outline: none ; /* Color al pasar el mouse */
+    outline: none ;
   }
   
   .sign-in-button .icon {
-    margin-left: 5px; /* Espacio entre el texto y el ícono */
-    display: flex; /* Asegura que el ícono esté alineado */
-    align-items: center; /* Alinear verticalmente */
+    margin-left: 5px; 
+    display: flex; 
+    align-items: center; 
   }
   
   
@@ -119,13 +119,13 @@
     width: 100%;
     position: absolute;
     height: 45%;
-    bottom: -100%; /* Alinear al top */
+    bottom: -100%; 
    
   }
   
   .footer-container {
-     /* Color de fondo */
-    color: white; /* Color del texto */
+     
+    color: white; 
     padding: 20px;
     width: 100%;
     height: 23%;
@@ -133,36 +133,36 @@
   
   .footer-content {
     display: flex;
-    justify-content: space-between; /* Espacio entre secciones */
-    flex-wrap: wrap; /* Permite que las secciones se acomoden en varias filas si es necesario */
+    justify-content: space-between; 
+    flex-wrap: wrap; 
   }
   
   .footer-section {
-    flex: 1; /* Cada sección ocupa un espacio igual */
-    min-width: 150px; /* Ancho mínimo para cada sección */
-    margin: 10px; /* Espaciado entre secciones */
+    flex: 1; 
+    min-width: 150px; 
+    margin: 10px;
   }
   
   .footer-section h4 {
-    margin-bottom: 10px; /* Espaciado inferior para los títulos */
+    margin-bottom: 10px; 
   }
   
   .footer-section ul {
-    list-style-type: none; /* Eliminar los puntos de la lista */
-    padding: 0; /* Eliminar padding */
+    list-style-type: none; 
+    padding: 0; 
   }
   
   .footer-section li {
-    margin: 5px 0; /* Espaciado entre elementos de la lista */
+    margin: 5px 0; 
   }
   
   .social-icons {
-    display: flex; /* Usar flexbox para alinear íconos sociales */
-    gap: 10px; /* Espaciado entre íconos */
+    display: flex; 
+    gap: 10px; 
   }
   
   .footer-bottom {
-    text-align: center; /* Centrar el texto del pie de página */
-    margin-top: 20px; /* Espaciado superior */
+    text-align: center; 
+    margin-top: 20px; 
   }
   
