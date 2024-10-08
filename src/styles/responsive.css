@@ -21,6 +21,10 @@
       bottom:61.3rem;
       right:3.5rem;
     }
+    .banks{
+      width: 50%;
+    }
+    
    
   }
   
@@ -68,10 +72,12 @@
   .select{
     width: 240px;
   }
-  
+    .product-list{
+      height: 250rem;
+    }
     .product-card{
-      width: 100%;
-      margin-left: -0px;
+      width: 90%;
+      margin-left: -3px;
     }
   
     #root {
@@ -84,6 +90,17 @@
     position: absolute;
     bottom:23.3rem;
     right:2.5rem;
+  }
+
+  .pagination-container{
+    margin-top: -80px; 
+    display: flex; 
+    justify-content: center; 
+    width: 100%; 
+  }
+
+  .banks{
+    width: 80%;
   }
   
   }

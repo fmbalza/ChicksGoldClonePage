@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <footer className='footer' >
             <div className='SuperiorFooter' style={{ width:'100%' }}>
-            <img src={imagen} width={'20%'} />
+                    <img className="banks"src={imagen} width={'20%'} />
             </div>
             <div className="footer-container">
             <div className="footer-content">
