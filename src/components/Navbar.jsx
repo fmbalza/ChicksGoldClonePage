@@ -1,7 +1,8 @@
 import React from 'react';
 import * as Icon from 'react-bootstrap-icons'
-import '../App.css'; // Asegúrate de tener un archivo CSS para los estilos
+import '../styles/layout.css'; // Asegúrate de tener un archivo CSS para los estilos
 import Divider from './Divider';
+import '../styles/responsive.css';
 
 const Navbar = () => {
     return (

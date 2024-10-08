@@ -1,12 +1,13 @@
 import React from 'react';
-import '../App.css'
+import '../styles/layout.css'; 
 import Divider from './Divider';
 import imagen from '../assets/pf.png'
+import '../styles/responsive.css';
 
 const Footer = () => {
     return (
         <footer className='footer' >
-            <div className='SuperiorFooter' style={{ width:'100%', backgroundColor:'#43445a'}}>
+            <div className='SuperiorFooter' style={{ width:'100%' }}>
             <img src={imagen} width={'20%'} />
             </div>
             <div className="footer-container">

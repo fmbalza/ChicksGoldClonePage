@@ -1,6 +1,6 @@
 import React from 'react';
-import '../App.css'; // Asegúrate de crear un archivo CSS para estilos
-
+import '../styles/components.css'; // Asegúrate de crear un archivo CSS para estilos
+import '../styles/responsive.css';
 const Select = ({ name, icon }) => {
     return (
         <div className="select-container">

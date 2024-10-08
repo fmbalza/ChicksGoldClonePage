@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Cart } from 'react-bootstrap-icons';
 import { Dot} from 'react-bootstrap-icons';
-import '../App.css'// Asegúrate de crear este archivo CSS
+import '../styles/components.css';
+import '../styles/responsive.css';
 
 const ProductCard = ({ product }) => {
     const [quantity, setQuantity] = useState(1);

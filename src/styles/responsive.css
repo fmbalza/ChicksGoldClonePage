@@ -1,0 +1,90 @@
+/* Funciones @media */
+
+@media (max-width: 1280px) {
+    .body2{
+      width: 100%;
+    }
+    .footer {
+      bottom: -60%; 
+      width: 100%;/* Valor para pantallas grandes */
+      height: 30%;
+    }
+    .content-list{
+      margin-top: 30%;
+    }
+    .product-list{
+      height: 1400px;
+    }
+
+    .conta{
+      position: absolute;
+      bottom:61.3rem;
+      right:3.5rem;
+    }
+   
+  }
+  
+  @media (max-width: 845px) {
+    .body2{
+      width: 100%;
+    }
+    .nav-links, .nav1-links {
+      display: none; /* Ocultar los enlaces en pantallas pequeñas */
+  }
+    .content-list{
+      margin-top: 100%;
+      margin-left: 10px;
+      width: 94%;
+    }
+    .footer {
+      top: 280rem; 
+      width: 100%;
+      height: 110%;/* Ajusta este valor según tus necesidades */
+    }
+  
+    .navbar{
+      width: 100%;
+    }
+    .searchbar{
+      margin-top: 0%;
+      width: 90%; /* Ancho más grande en pantallas pequeñas */
+      margin-left: 5%; /* Ajustar margen para centrar */
+      padding: 15px; /* Reducir padding en pantallas pequeñas */
+    }
+  
+    .searchbar-container{
+      display: flex;
+      flex-wrap: wrap;
+    
+      width: 90%;
+    }
+    .search-input {
+      padding: 15px; /* Ajustar padding del input */
+      margin-right: 5px;
+   
+  
+     
+  }
+  .select{
+    width: 240px;
+  }
+  
+    .product-card{
+      width: 100%;
+      margin-left: -0px;
+    }
+  
+    #root {
+      width: 100%; /* Asegurarte de que el contenedor ocupe el 100% del ancho */
+      display: flex; /* Solo si necesitas que los hijos sean flexibles */
+      flex-direction: column; /* Alinear los elementos en columnas si es necesario */
+  }
+  
+  .conta{
+    position: absolute;
+    bottom:23.3rem;
+    right:2.5rem;
+  }
+  
+  }
+  

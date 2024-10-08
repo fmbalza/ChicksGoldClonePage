@@ -4,6 +4,7 @@ import ProductList from './components/ProductList';
 import Searchbar from './components/SearchBar';
 import Footer from './components/Footer';
 import './App.css'
+import './styles/responsive.css'
 
 const App = () => {
     return (
