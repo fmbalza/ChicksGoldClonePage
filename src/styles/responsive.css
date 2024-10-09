@@ -30,7 +30,7 @@
   
   @media (max-width: 845px) {
     .body2{
-      width: 50%;
+      width: 100%;
     }
     .nav-links, .nav1-links {
       display: none; 

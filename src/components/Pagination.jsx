@@ -4,7 +4,7 @@ import '../App.css'; // Asegúrate de importar el CSS
 const Pagination = () => {
     return (
         <div className="pagination">
-            <button className="page-button1">&lt;</button>
+           
 
             <button className="page-button active">1</button>
             <button className="page-button">2</button>
